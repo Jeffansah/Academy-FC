@@ -17,13 +17,13 @@ const Topbar = () => {
     const sideBar = document.getElementById("sidebar");
 
     const handleScroll = () => {
-      const shouldHideTopBar = window.scrollY > 0;
+      const shouldHideTopBar = window.scrollY > 60;
+
       if (shouldHideTopBar) {
-        topBar.classList.add("hidden-topbar");
-        sideBar.classList.add("move-sidebar");
+        sideBar.style.position = "fixed";
+        sideBar.style.top = "0px";
       } else {
-        topBar.classList.remove("hidden-topbar");
-        sideBar.classList.remove("move-sidebar");
+        sideBar.style.position = "relative";
       }
     };
 
@@ -35,7 +35,7 @@ const Topbar = () => {
   return (
     <div
       id="topbar"
-      className="px-10 py-5 flex justify-between font-semibold fixed z-20 bg-body w-full"
+      className="px-10 py-5 flex justify-between font-semibold z-20 bg-body w-full"
     >
       <div className="flex gap-10 text-xs">
         <Link href="#" className="flex gap-2 items-center ">

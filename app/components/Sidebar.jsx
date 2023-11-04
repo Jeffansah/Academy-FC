@@ -5,10 +5,7 @@ import Link from "next/link";
 
 const Sidebar = () => {
   return (
-    <div
-      id="sidebar"
-      className={` w-[15%] bg-sidebar h-full px-5 fixed top-[60px]`}
-    >
+    <div id="sidebar" className={` w-[15%] bg-sidebar h-full px-5 `}>
       <div className="flex flex-col ">
         <div className="flex justify-center pb-4 border-b border-[#c72b2b]/20">
           <Link href="#home">

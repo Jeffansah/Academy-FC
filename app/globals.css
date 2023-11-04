@@ -17,34 +17,3 @@ body {
   color: var(--white-color);
   scroll-behavior: smooth;
 }
-
-.hidden-topbar {
-  animation: fade-out 0.2s forwards;
-}
-
-.move-sidebar {
-  animation: move-sidebar 0.2s forwards;
-}
-
-#transparent-btn:hover {
-  color: transparent !important;
-}
-
-@keyframes fade-out {
-  0% {
-    height: 60px;
-  }
-  100% {
-    position: relative;
-    height: 0;
-  }
-}
-
-@keyframes move-sidebar {
-  0% {
-    top: 60px;
-  }
-  100% {
-    top: 0;
-  }
-}

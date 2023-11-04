@@ -4,7 +4,7 @@ import Sections from "./Sections";
 
 const Main = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="h-screen flex flex-col">
       <Topbar id={"topbar"} />
       <div className="flex flex-grow">
         <Sidebar />
