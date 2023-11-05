@@ -13,18 +13,18 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(formData);
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    // const response = await fetch("/api/contact", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify(formData),
+    // });
 
-    if (response.ok) {
-      console.log("Message sent successfully!"),
-        setFormData({ firstname: "", lastname: "", email: "", message: "" });
-    }
+    // if (response.ok) {
+    //   console.log("Message sent successfully!"),
+    //     setFormData({ firstname: "", lastname: "", email: "", message: "" });
+    // }
 
-    if (!response.ok) console.log("Message failed to send.");
+    // if (!response.ok) console.log("Message failed to send.");
   };
 
   return (

@@ -20,7 +20,7 @@ const Social = () => {
         </Link>
       </div>
       <Link
-        href="#about"
+        href="#"
         className="flex items-center gap-2 max-w-[200px] justify-center text-white text-[13px]  py-3 px-9 bg-theme hover:bg-[#a62727] hover:text-white font-medium  transition duration-200 ease-in-out"
       >
         Get in touch <ArrowRight className="w-5 h-5" />

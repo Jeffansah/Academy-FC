@@ -12,7 +12,7 @@ const News = () => {
         </h2>
         <div className="bg-theme h-[0.5px] flex-1" />
         <Link
-          href="#news"
+          href="#"
           className="flex items-center gap-2 justify-center text-white text-[13px]  py-3 px-9 bg-theme hover:bg-[#a62727] hover:text-white font-medium  transition duration-200 ease-in-out"
         >
           See all <ArrowRight className="w-5 h-5" />
