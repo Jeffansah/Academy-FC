@@ -23,7 +23,7 @@ const Hero = () => {
         style={{ transform: "translate(-50%, -70%)" }}
       >
         <h4 className="text-[18px] font-light text-center tracking-widest">
-          WELCOME TO YOUNG STARS ACADEMY
+          WELCOME TO SIANO FC ACADEMY
         </h4>
         <div className="flex justify-center items-center gap-5">
           <h2 className="text-theme text-[13px] font-semibold">

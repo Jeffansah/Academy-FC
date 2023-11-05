@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 const Whyus = () => {
   return (
-    <div className="pt-6 max-w-[1000px] mx-auto">
+    <div className="pt-36 max-w-[1000px] mx-auto">
       <div className="flex w-full h-[500px] bg-sidebar">
         <div className="w-[45%] h-full relative">
           <Image src={training} layout="fill" objectFit="cover" />

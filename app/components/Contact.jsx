@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <div className=" max-w-[1000px] mx-auto h-[500px]">
+    <div className=" max-w-[1000px] mx-auto pt-36">
       <Social />
       <SponsorLogo />
       <ContactForm />

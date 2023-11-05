@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../assets/images/academylogo.png";
+import logo from "../assets/images/SianoFC.png";
 import { FacebookIcon, TwitterIcon, YoutubeIcon } from "lucide-react";
 import Link from "next/link";
 

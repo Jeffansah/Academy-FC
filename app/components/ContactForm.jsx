@@ -1,14 +1,30 @@
-import React from "react";
+"use client";
+
+import { useState } from "react";
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    message: "",
+  });
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = {
-      name: e.target.firstname.value,
-      lastname: e.target.lastname.value,
-      email: e.target.email.value,
-      message: e.target.message.value,
-    };
+    console.log(formData);
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      console.log("Message sent successfully!"),
+        setFormData({ firstname: "", lastname: "", email: "", message: "" });
+    }
+
+    if (!response.ok) console.log("Message failed to send.");
   };
 
   return (
@@ -16,24 +32,27 @@ const ContactForm = () => {
       <h1 className="font-bold text-5xl font-urbanist text-white">
         Contact us
       </h1>
-      <form className="mt-7 flex flex-col gap-8">
+      <form onSubmit={handleSubmit} className="mt-7 flex flex-col gap-6">
         <div className="flex gap-10">
           <input
             className="flex-1 bg-sidebar py-4 px-3 focus:outline-none"
+            onChange={(e) => setFormData({ firstname: e.target.value })}
             type="text"
             id="firstname"
             placeholder="* First Name"
             required
           />
           <input
+            onChange={(e) => setFormData({ lastname: e.target.value })}
             className="flex-1 bg-sidebar py-4 px-3 focus:outline-none"
             type="text"
             id="lastname"
             placeholder="* Last Name"
           />
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6">
           <input
+            onChange={(e) => setFormData({ email: e.target.value })}
             className="bg-sidebar py-4 px-3 focus:outline-none"
             type="email"
             id="email"
@@ -43,6 +62,7 @@ const ContactForm = () => {
             required
           />
           <textarea
+            onChange={(e) => setFormData({ message: e.target.value })}
             className="bg-sidebar py-4 px-3 focus:outline-none"
             id="message"
             rows={6}

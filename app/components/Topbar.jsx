@@ -40,7 +40,7 @@ const Topbar = () => {
       <div className="flex gap-10 text-xs">
         <Link href="#" className="flex gap-2 items-center ">
           <MailIcon className="h-5 w-5 text-theme" />
-          contact@youngstars.com
+          contact@sianofc.com
         </Link>
         <Link href="#" className="flex gap-2 items-center">
           <PhoneIcon className="h-5 w-5 text-theme" />
