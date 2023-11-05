@@ -1,5 +1,5 @@
-import coach from "@app/assets/images/coach2.webp";
-import graduate from "@app/assets/images/graduate.webp";
+import coach from "../app/assets/images/coach2.webp";
+import graduate from "../app/assets/images/kicking.webp";
 
 const features = [
   {
@@ -10,8 +10,8 @@ const features = [
     picture: coach,
   },
   {
-    title: "Collaborative Talent Integration",
-    subtitle: "Graduate Excellence Transfer",
+    title: "Talent Integration",
+    subtitle: "Excellent Graduate Transfer",
     description:
       "Embed our elite graduates into your club's fabric, fortifying your roster with skilled individuals shaped by our distinguished football academy.",
     picture: graduate,
