@@ -13,26 +13,35 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(formData);
-    // const response = await fetch("/api/contact", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify(formData),
-    // });
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
 
-    // if (response.ok) {
-    //   console.log("Message sent successfully!"),
-    //     setFormData({ firstname: "", lastname: "", email: "", message: "" });
-    // }
+    if (response.ok) {
+      console.log("Message sent successfully!"),
+        setFormData({ firstname: "", lastname: "", email: "", message: "" });
+    }
 
-    // if (!response.ok) console.log("Message failed to send.");
+    if (!response.ok) console.log("Message failed to send.");
   };
 
   return (
     <div className="mt-20 text-secondary text-sm">
-      <h1 className="font-bold text-5xl font-urbanist text-white">
+      <h1
+        data-aos="fade-up"
+        data-aos-delay="400"
+        className="font-bold text-5xl font-urbanist text-white"
+      >
         Contact us
       </h1>
-      <form onSubmit={handleSubmit} className="mt-7 flex flex-col gap-6">
+      <form
+        data-aos="fade-up"
+        data-aos-delay="500"
+        onSubmit={handleSubmit}
+        className="mt-7 flex flex-col gap-6"
+      >
         <div className="flex gap-10">
           <input
             className="flex-1 bg-sidebar py-4 px-3 focus:outline-none"

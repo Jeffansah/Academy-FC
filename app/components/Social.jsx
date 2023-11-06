@@ -6,7 +6,11 @@ import Link from "next/link";
 
 const Social = () => {
   return (
-    <div className="flex gap-9 items-center justify-center w-full">
+    <div
+      data-aos="fade-in"
+      data-aos-delay="400"
+      className="flex gap-9 items-center justify-center w-full"
+    >
       <p className="font-bold">Follow us</p>
       <div className="flex gap-6">
         <Link href="#">

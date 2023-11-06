@@ -6,7 +6,11 @@ import Link from "next/link";
 const News = () => {
   return (
     <div className="pt-24 max-w-[1000px] mx-auto">
-      <div className="flex items-center gap-4">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        className="flex items-center gap-4"
+      >
         <h2 className="font-bold text-lg font-urbanist">
           LATEST NEWS & VIDEOS
         </h2>
@@ -20,7 +24,12 @@ const News = () => {
       </div>
       <div className="mt-10 grid grid-cols-3 gap-8">
         {news.slice(0, 3).map((newsItem, i) => (
-          <div key={i} className="flex flex-col gap-4 group cursor-pointer">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            key={i}
+            className="flex flex-col gap-4 group cursor-pointer"
+          >
             <div className="aspect-w-16 aspect-h-9 max-w-[317.336px] overflow-hidden">
               <Image
                 src={newsItem.picture}

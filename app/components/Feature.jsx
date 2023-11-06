@@ -17,7 +17,11 @@ const Feature = ({ picture, title, subtitle, description }) => {
 
       <div>
         <div className="bg-sidebar flex flex-col flex-1 py-16">
-          <div className="flex flex-col gap-6 max-w-[80%] mx-auto">
+          <div
+            data-aos="fade-in"
+            data-aos-delay="200"
+            className="flex flex-col gap-6 max-w-[80%] mx-auto"
+          >
             <div className="flex items-center gap-4">
               <h3 className="font-bold font-urbanist text-theme tracking-tight">
                 {subtitle}

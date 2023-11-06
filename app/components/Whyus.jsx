@@ -6,12 +6,20 @@ import { ArrowRight } from "lucide-react";
 const Whyus = () => {
   return (
     <div className="pt-36 max-w-[1000px] mx-auto">
-      <div className="flex w-full h-[500px] bg-sidebar">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="400"
+        className="flex w-full h-[500px] bg-sidebar"
+      >
         <div className="w-[45%] h-full relative">
           <Image src={training} layout="fill" objectFit="cover" />
         </div>
         <div className="bg-sidebar flex flex-col flex-1 py-20">
-          <div className="flex flex-col gap-6 max-w-[75%] mx-auto">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="400"
+            className="flex flex-col gap-6 max-w-[75%] mx-auto"
+          >
             <div className="flex items-center gap-4">
               <h3 className="font-bold font-urbanist text-theme tracking-tight">
                 FUTURE STARS FORGED
