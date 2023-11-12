@@ -33,7 +33,7 @@ const EmailResponse = ({ message, firstname, lastname, email, subject }) => {
                   height={114}
                   src="https://i.ibb.co/Mh69jcS/SianoFC.png"
                   alt="Siano FC Logo"
-                  className="object-contain object-center"
+                  className="object-contain"
                 />
               </div>
               <div className="h-1 bg-gray-100 w-full mb-5"></div>
