@@ -7,6 +7,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Topbar from "./components/Topbar";
 import Sidebar from "./components/Sidebar";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,12 +35,14 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <title>Siano FC</title>
       <body className={inter.className}>
         <div className="h-screen flex flex-col">
           <Topbar id={"topbar"} />
           <div className="flex flex-grow">
             <Sidebar />
             {children}
+            <Toaster />
           </div>
         </div>
       </body>
