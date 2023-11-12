@@ -29,8 +29,8 @@ const EmailResponse = ({ message, firstname, lastname, email, subject }) => {
             <Section className="bg-white my-10 py-4 pt-2 rounded-lg shadow-md w-full border-4">
               <div className="w-full border-2">
                 <img
-                  width={114}
-                  height={114}
+                  width={120}
+                  height={120}
                   src="https://i.ibb.co/Mh69jcS/SianoFC.png"
                   alt="Siano FC Logo"
                   className="object-contain"
