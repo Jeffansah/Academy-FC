@@ -37,13 +37,13 @@ const ContactForm = () => {
       });
     } finally {
       setIsLoading(false);
-      // setFormFields({
-      //   firstname: "",
-      //   lastname: "",
-      //   email: "",
-      //   subject: "",
-      //   message: "",
-      // });
+      setFormFields({
+        firstname: "",
+        lastname: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
     }
   };
 
