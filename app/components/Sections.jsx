@@ -2,6 +2,7 @@ import CTA from "./CTA";
 import Contact from "./Contact";
 import Features from "./Features";
 import Footer from "./Footer";
+import Gallery from "./Gallery";
 import Hero from "./Hero";
 import Main from "./Main";
 import News from "./News";
@@ -28,13 +29,13 @@ const Sections = () => {
           <Players />
         </div>
         <div className="min-h-max ">
+          <Gallery />
+        </div>
+        <div className="min-h-max ">
           <CTA />
         </div>
         <div className="min-h-max ">
           <Contact />
-        </div>
-        <div className="min-h-max">
-          <Footer />
         </div>
       </div>
     </Main>

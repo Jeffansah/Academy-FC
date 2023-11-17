@@ -17,9 +17,11 @@ const Topbar = () => {
     const sideBar = document.getElementById("sidebar");
 
     const handleScroll = () => {
-      const shouldHideTopBar = window.scrollY > 60;
+      const shouldHideTopBar = window.scrollY > 50;
 
-      if (shouldHideTopBar) {
+      console.log(window.scrollY);
+
+      if (shouldHideTopBar === true) {
         sideBar.style.position = "fixed";
         sideBar.style.top = "0px";
       } else {
@@ -35,7 +37,7 @@ const Topbar = () => {
   return (
     <div
       id="topbar"
-      className="px-10 py-5 flex justify-between font-semibold z-20 bg-body w-full"
+      className="px-10 py-4 flex justify-between font-semibold z-20 bg-body w-full"
     >
       <div className="flex gap-10 text-xs">
         <Link href="#" className="flex gap-2 items-center ">

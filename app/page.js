@@ -2,6 +2,7 @@ import CTA from "./components/CTA";
 import Contact from "./components/Contact";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import News from "./components/News";
 import Players from "./components/Players";
@@ -29,6 +30,9 @@ const Home = () => {
       </div>
       <div className="min-h-max ">
         <Players />
+      </div>
+      <div className="min-h-max ">
+        <Gallery />
       </div>
       <div className="min-h-max ">
         <CTA />

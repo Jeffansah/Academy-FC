@@ -1,0 +1,10 @@
+@media only screen and (max-width: 700px) {
+  .responsive-container {
+    width: 200px;
+  }
+  .responsive-container-shell {
+    padding: 20px 0;
+    background-color: green;
+    display: block;
+  }
+}

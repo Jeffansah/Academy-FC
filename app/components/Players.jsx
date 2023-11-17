@@ -10,7 +10,7 @@ const Players = () => {
         data-aos-delay="400"
         className="flex items-center gap-4"
       >
-        <h2 className="font-bold text-lg font-urbanist">
+        <h2 className="font-bold text-xl font-urbanist">
           MEET OUR FUTURE STARS
         </h2>
         <div className="bg-theme h-[0.5px] flex-1" />

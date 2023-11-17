@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../assets/images/SianoFC.png";
+import logo from "../assets/images/newlogo.png";
 import { FacebookIcon, TwitterIcon, YoutubeIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -7,9 +7,9 @@ const Sidebar = () => {
   return (
     <div id="sidebar" className={` w-[15%] bg-sidebar h-full px-5 `}>
       <div className="flex flex-col ">
-        <div className="flex justify-center pb-4 border-b border-[#c72b2b]/20">
+        <div className="flex justify-center py-4 border-b border-[#c72b2b]/20">
           <Link href="#home">
-            <Image src={logo} alt="logo" width={130} height={130} />
+            <Image src={logo} alt="logo" width={90} height={90} />
           </Link>
         </div>
         <Link
