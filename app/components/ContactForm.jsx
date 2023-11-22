@@ -48,7 +48,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-lg:mt-10 mt-20 text-secondary text-sm">
+    <div className="max-lg:mt-10 mt-20 text-white text-sm">
       <h1
         data-aos="fade-up"
         data-aos-delay="400"
@@ -64,7 +64,7 @@ const ContactForm = () => {
       >
         <div className="flex gap-8 max-sm:gap-4">
           <input
-            className="max-sm:w-1/2 flex-1 bg-sidebar py-4 px-3 focus:outline-none"
+            className="max-sm:w-1/2 flex-1 bg-sidebar py-4 px-3 focus:outline-none placeholder:text-secondary"
             type="text"
             onChange={(event) =>
               setFormFields({ ...formFields, firstname: event.target.value })
@@ -76,7 +76,7 @@ const ContactForm = () => {
             required
           />
           <input
-            className="max-sm:w-1/2 flex-1 bg-sidebar py-4 px-3 focus:outline-none"
+            className="max-sm:w-1/2 flex-1 bg-sidebar py-4 px-3 focus:outline-none placeholder:text-secondary"
             type="text"
             name="lastname"
             onChange={(event) =>
@@ -90,7 +90,7 @@ const ContactForm = () => {
         </div>
         <div className="flex flex-col gap-6">
           <input
-            className="bg-sidebar py-4 px-3 focus:outline-none"
+            className="bg-sidebar py-4 px-3 focus:outline-none placeholder:text-secondary"
             type="email"
             id="email"
             value={formFields.email}
@@ -104,7 +104,7 @@ const ContactForm = () => {
             required
           />
           <input
-            className="bg-sidebar py-4 px-3 focus:outline-none"
+            className="bg-sidebar py-4 px-3 focus:outline-none placeholder:text-secondary"
             type="text"
             id="subject"
             value={formFields.subject}
@@ -116,7 +116,7 @@ const ContactForm = () => {
             placeholder="* Subject"
           />
           <textarea
-            className="bg-sidebar py-4 px-3 focus:outline-none"
+            className="bg-sidebar py-4 px-3 focus:outline-none placeholder:text-secondary"
             id="message"
             onChange={(event) =>
               setFormFields({ ...formFields, message: event.target.value })
