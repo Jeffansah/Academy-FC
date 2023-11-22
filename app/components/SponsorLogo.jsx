@@ -7,7 +7,7 @@ const SponsorLogo = () => {
     <div
       data-aos="fade-in"
       data-aos-delay="500"
-      className="mt-12 py-8 border-t-[0.5px] border-b-[0.5px] border-secondary flex justify-center items-center relative"
+      className="max-sm:mt-10 mt-12 py-8 border-t-[0.5px] border-b-[0.5px] border-secondary flex justify-center items-center relative"
     >
       <Image src={logo} width={100} height={100} />
       <div

@@ -13,6 +13,7 @@ const Social = () => {
     >
       <p className="font-bold">Follow us</p>
       <div className="flex gap-6">
+        {" "}
         <Link href="#">
           <TwitterIcon className="w-6 h-6 hover:text-theme cursor-pointer transition hover:scale-125 duration-200" />
         </Link>
@@ -23,9 +24,10 @@ const Social = () => {
           <YoutubeIcon className="w-6 h-6 hover:text-theme cursor-pointer transition hover:scale-125 duration-200" />
         </Link>
       </div>
+
       <Link
         href="#"
-        className="flex items-center gap-2 max-w-[200px] justify-center text-white text-[13px]  py-3 px-9 bg-theme hover:bg-[#a62727] hover:text-white font-medium  transition duration-200 ease-in-out"
+        className="max-sm:hidden flex items-center gap-2 max-w-[200px] justify-center text-white text-[13px]  py-3 px-9 bg-theme hover:bg-[#a62727] hover:text-white font-medium  transition duration-200 ease-in-out"
       >
         Get in touch <ArrowRight className="w-5 h-5" />
       </Link>

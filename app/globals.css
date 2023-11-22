@@ -74,6 +74,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--body-background);
   color: var(--white-color);
@@ -109,10 +113,6 @@ body {
 .thumbs {
   border-radius: 0px !important;
 }
-/* the parent
-.slick-list {
-  margin: 0 -27px;
-} */
 
 /*Player card gray gradient*/
 
@@ -145,4 +145,29 @@ body {
   transform: scale(1.2);
   -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* Hamburger Menu Animation */
+
+.x-mark {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.hamburger {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .swiper-pagination {
+    margin-top: 40px !important;
+  }
 }

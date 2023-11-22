@@ -48,11 +48,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mt-20 text-secondary text-sm">
+    <div className="max-lg:mt-10 mt-20 text-secondary text-sm">
       <h1
         data-aos="fade-up"
         data-aos-delay="400"
-        className="font-bold text-5xl font-urbanist text-white"
+        className="font-bold text-5xl max-xl:text-3xl font-urbanist text-white"
       >
         Contact us
       </h1>
@@ -60,11 +60,11 @@ const ContactForm = () => {
         data-aos="fade-up"
         data-aos-delay="500"
         onSubmit={handleSubmit}
-        className="mt-7 flex flex-col gap-6"
+        className="mt-7 flex flex-col gap-6 max-xl:text-base"
       >
-        <div className="flex gap-8">
+        <div className="flex gap-8 max-sm:gap-4">
           <input
-            className="flex-1 bg-sidebar py-4 px-3 focus:outline-none"
+            className="max-sm:w-1/2 flex-1 bg-sidebar py-4 px-3 focus:outline-none"
             type="text"
             onChange={(event) =>
               setFormFields({ ...formFields, firstname: event.target.value })
@@ -76,7 +76,7 @@ const ContactForm = () => {
             required
           />
           <input
-            className="flex-1 bg-sidebar py-4 px-3 focus:outline-none"
+            className="max-sm:w-1/2 flex-1 bg-sidebar py-4 px-3 focus:outline-none"
             type="text"
             name="lastname"
             onChange={(event) =>

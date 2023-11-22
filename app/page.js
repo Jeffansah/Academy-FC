@@ -15,32 +15,35 @@ export const metadata = {
 
 const Home = () => {
   return (
-    <div id="sections" className="flex flex-col w-[85%] ml-auto max-h-full">
-      <div className="min-h-[calc(100vh-60px)] max-h-[calc(100vh-60px)] relative">
+    <div
+      id="sections"
+      className="flex flex-col w-screen xl:w-[85%] xl:ml-auto xl:max-h-full"
+    >
+      <div className="xl:min-h-[calc(100vh-60px)] lg:max-h-[calc(100vh-60px)] relative">
         <Hero />
       </div>
-      <div className="min-h-max">
+      <div id="news" className="xl:min-h-max">
         <News />
       </div>
-      <div className="min-h-max ">
+      <div className="xl:min-h-max ">
         <Whyus />
       </div>
-      <div className="min-h-max ">
+      <div className="xl:min-h-max ">
         <Features />
       </div>
-      <div className="min-h-max ">
+      <div id="team" className="xl:min-h-max ">
         <Players />
       </div>
-      <div className="min-h-max ">
+      <div id="gallery" className="xl:min-h-max ">
         <Gallery />
       </div>
-      <div className="min-h-max ">
+      <div className="xl:min-h-max ">
         <CTA />
       </div>
-      <div className="min-h-max ">
+      <div id="contact" className="xl:min-h-max ">
         <Contact />
       </div>
-      <div className="min-h-max">
+      <div className="xl:min-h-max">
         <Footer />
       </div>
     </div>

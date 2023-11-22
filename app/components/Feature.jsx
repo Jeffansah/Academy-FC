@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Feature = ({ picture, title, subtitle, description }) => {
   return (
-    <div className="flex-1 h-[850px] flex flex-col">
-      <div className="relative w-full h-[300px]">
+    <div className="sm:flex-1 h-max xl:h-[850px] flex flex-col">
+      <div className="relative w-full h-[280px] lg:h-[300px]">
         <Image
           src={picture}
           alt={title}
@@ -16,19 +16,19 @@ const Feature = ({ picture, title, subtitle, description }) => {
       </div>
 
       <div>
-        <div className="bg-sidebar flex flex-col flex-1 py-16">
+        <div className="bg-sidebar flex flex-col justify-center flex-1 max-lg:py-10 lg:py-16">
           <div
             data-aos="fade-in"
             data-aos-delay="200"
-            className="flex flex-col gap-6 max-w-[80%] mx-auto"
+            className="flex flex-col gap-6 max-xl:gap-3 max-w-[80%] mx-auto"
           >
             <div className="flex items-center gap-4">
-              <h3 className="font-bold font-urbanist text-theme tracking-tight">
+              <h3 className="max-xl:text-sm max-xl:font-medium font-bold font-urbanist text-theme tracking-tight">
                 {subtitle}
               </h3>
               <div className="h-[0.5px] bg-theme flex-1" />
             </div>
-            <h1 className="font-bold text-3xl">{title}</h1>
+            <h1 className="font-bold text-3xl max-xl:text-xl">{title}</h1>
             <p className="text-secondary text-sm mt-3">{description}</p>
             <Link
               href="#"

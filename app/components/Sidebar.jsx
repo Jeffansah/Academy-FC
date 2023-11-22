@@ -2,16 +2,27 @@ import Image from "next/image";
 import logo from "../assets/images/newlogo.png";
 import { FacebookIcon, TwitterIcon, YoutubeIcon } from "lucide-react";
 import Link from "next/link";
+import MobileSidebar from "./MobileSidebar";
 
 const Sidebar = () => {
   return (
-    <div id="sidebar" className={` w-[15%] bg-sidebar h-full px-5 `}>
-      <div className="flex flex-col ">
+    <div
+      id="sidebar"
+      className={`max-xl:w-full w-[15%] bg-sidebar max-xl:h-max  px-6 max-lg:py-3 lg:py-5 xl:py-0 xl:h-full`}
+    >
+      <div className="flex flex-col max-xl:hidden">
         <div className="flex justify-center py-4 border-b border-[#c72b2b]/20">
           <Link href="#home">
-            <Image src={logo} alt="logo" width={90} height={90} />
+            <Image src={logo} alt="logo" width={90} />
           </Link>
         </div>
+        <div></div>
+        <Link
+          href="#about"
+          className="py-7 text-[13px] text-secondary border-b border-[#c72b2b]/20"
+        >
+          <p className="hover:text-theme">About</p>
+        </Link>
         <Link
           href="#news"
           className="py-7 text-[13px] text-secondary border-b border-[#c72b2b]/20"
@@ -37,12 +48,6 @@ const Sidebar = () => {
           <p className="hover:text-theme">Social Media</p>
         </Link>
         <Link
-          href="#blog"
-          className="py-7 text-[13px] text-secondary border-b  border-[#c72b2b]/20"
-        >
-          <p className="hover:text-theme">Blog</p>
-        </Link>
-        <Link
           href="#contact"
           className="py-7 text-[13px] text-secondary border-b  border-[#c72b2b]/20"
         >
@@ -60,6 +65,7 @@ const Sidebar = () => {
           </Link>
         </div>
       </div>
+      <MobileSidebar />
     </div>
   );
 };
